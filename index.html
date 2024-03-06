@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de trabajo Kranservice</title>
+    <style>
+        body {
+            font-family: Bradley Hand, sans-serif;
+            font-size: 5px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        label {
+            font-size: 20px;
+            margin-bottom: 1px; /* Espacio entre la pregunta y el input */
+            display: block; /* Hace que cada etiqueta esté en su propia línea */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="time"],
+        input[type="submit"] {
+            font-size: 15px;
+            margin-bottom: 10px; /* Espacio entre el input y el siguiente elemento */
+            font-size: 16px;
+            width: 100%; /* Ajustar el ancho del input al 100% del contenedor */
+            height: 40px; /* Ajustar la altura del input */
+            padding: 5px; /* Agregar relleno interno al input */
+            box-sizing: border-box; /* Incluir el relleno y el borde en el tamaño total del elemento */
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de trabajo Kranservice</h1>
+    <form action="enviar_formulario.php" method="post">
+    
+        <label for="nombre">Nombre de la empresa:</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+        <hr><!-- Separador semitransparente -->
+
+        <label for="email">Persona que recibe la maquina:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <hr><!-- Separador semitransparente -->
+
+        <label for="fecha_inicio">Fecha de trabajo:</label><br>
+        <input type="date" id="fecha_inicio" name="fecha_inicio"><br>
+        <hr><!-- Separador semitransparente -->
+
+        <label for="hora_inicio">Hora de inicio:</label><br>
+        <input type="time" id="hora_inicio" name="hora_inicio"><br>
+        <hr><!-- Separador semitransparente -->
+
+        <label for="hora_termino">Hora de término:</label><br>
+        <input type="time" id="hora_termino" name="hora_termino"><br>
+        <hr><!-- Separador semitransparente -->
+
+        <label for="marca_maquina">Marca de la máquina:</label><br>
+        <input type="text" id="marca_maquina" name="marca_maquina"><br>
+        <hr><!-- Separador semitransparente -->
+
+        <label for="modelo">Modelo:</label><br>
+        <input type="text" id="modelo" name="modelo"><br>
+        <hr><!-- Separador semitransparente -->
+
+        <label for="serie">Serie:</label><br>
+        <input type="text" id="serie" name="serie"><br>
+        <hr><!-- Separador semitransparente -->
+
+        <label for="motivo_trabajo">Motivo del trabajo:</label><br>
+        <input type="text" id="motivo_trabajo" name="motivo_trabajo"><br>
+        <hr><!-- Separador semitransparente -->
+
+        <label for="solucion">Solución:</label><br>
+        <input type="text" id="solucion" name="solucion"><br>
+        <hr><!-- Separador semitransparente -->
+
+        <label for="observaciones">Observaciones extras:</label><br>
+        <input type="text" id="observaciones" name="observaciones"><br>
+        <hr><!-- Separador semitransparente -->
+
+        <label for="repuestos_usados">Repuestos usados:</label><br>
+        <input type="text" id="repuestos_usados" name="repuestos_usados"><br>
+        <hr><!-- Separador semitransparente -->
+
+        <label for="mecanico">Mecánico a cargo:</label><br>
+        <input type="text" id="mecanico" name="mecanico"><br>
+        <hr><!-- Separador semitransparente -->
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
